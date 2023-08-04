@@ -78,7 +78,9 @@ export class ProductListComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    this._listFilter = 'am';
+    // this._listFilter = 'am';
+    // console.log(this.products);
+    this.filteredProducts = this.products;
   }
 
   toggleImage(): void {
